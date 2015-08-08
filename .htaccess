@@ -1,0 +1,4 @@
+# jika ada kode short url dibelakang domain, maka set sebagai request
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$  ?decode=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ ?decode=$1
